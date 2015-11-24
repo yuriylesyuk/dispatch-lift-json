@@ -1,7 +1,10 @@
-import org.specs._
+import org.specs2.mutable._
+import org.specs2.runner.JUnitRunner
+import org.junit.runner.RunWith
 
-object LiftJsonSpec extends Specification {
-  import dispatch._
+@RunWith(classOf[JUnitRunner])
+class LiftJsonSpec extends Specification {
+  import dispatch.classic._
   import dispatch.liftjson.Js._
   import net.liftweb.json.JsonAST._
 
